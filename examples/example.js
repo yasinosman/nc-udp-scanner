@@ -6,11 +6,7 @@ function scan(ip, range) {
         .then((report) => {
             printParsedUdpScanReport(report);
             const hrend = process.hrtime(hrstart);
-            console.info(
-                `Scanned, parsed and printed ports ${range}@${ip} in ${
-                    (hrend[0], hrend[1] / 1000000)
-                }`
-            );
+            console.info('Executed in: %ds %dms', hrend[0], hrend[1] / 1000000)
             scan(ip, range);
         })
         .catch((error) => console.log(error));
