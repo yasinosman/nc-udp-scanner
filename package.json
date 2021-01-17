@@ -1,12 +1,12 @@
 {
     "name": "nc-udp-scanner",
-<<<<<<< HEAD
-    "version": "1.0.1",
-=======
-    "version": "1.0.0",
->>>>>>> e3285050a9349f36006063d4fe090325e262baee
+    "version": "1.0.3",
     "description": "Dependency free, promise based UDP port scanner using linux nc",
     "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yasinosman/nc-udp-scanner"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },

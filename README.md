@@ -1,12 +1,21 @@
 # nc-udp-scanner
+
 Dependency free, promise based UDP port scanner using linux nc
 
 ## Installation
 
+```bash
+npm i nc-udp-scanner
+```
+
 ## Usage
+
 Enter the IP address of the device you want to port scan and the port range you want to scan as parameters to the function.
 
+**You must have root privileges in order to use this function.**
+
 ## Examples
+
 ```javascript
 const { udpScan } = require("./lib/scanner");
 
@@ -16,7 +25,7 @@ function scan(ip, range) {
         .then((report) => {
             printParsedUdpScanReport(report);
             const hrend = process.hrtime(hrstart);
-            console.info('Executed in: %ds %dms', hrend[0], hrend[1] / 1000000)
+            console.info("Executed in: %ds %dms", hrend[0], hrend[1] / 1000000);
             scan(ip, range);
         })
         .catch((error) => console.log(error));
@@ -35,6 +44,7 @@ const printParsedUdpScanReport = (report) => {
 ```
 
 Output:
+
 ```bash
 {
   Header: 'PortScan',
