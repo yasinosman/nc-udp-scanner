@@ -1,6 +1,10 @@
 {
     "name": "nc-udp-scanner",
+<<<<<<< HEAD
     "version": "1.0.1",
+=======
+    "version": "1.0.0",
+>>>>>>> e3285050a9349f36006063d4fe090325e262baee
     "description": "Dependency free, promise based UDP port scanner using linux nc",
     "main": "index.js",
     "scripts": {
