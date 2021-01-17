@@ -1,4 +1,4 @@
-const { udpScan } = require("./lib/scanner");
+const { udpScan } = require("../lib/scanner");
 
 function scan(ip, range) {
     const hrstart = process.hrtime();
@@ -6,7 +6,7 @@ function scan(ip, range) {
         .then((report) => {
             printParsedUdpScanReport(report);
             const hrend = process.hrtime(hrstart);
-            console.info('Executed in: %ds %dms', hrend[0], hrend[1] / 1000000)
+            console.info("Executed in: %ds %dms", hrend[0], hrend[1] / 1000000);
             scan(ip, range);
         })
         .catch((error) => console.log(error));
