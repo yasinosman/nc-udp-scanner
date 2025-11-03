@@ -12,8 +12,6 @@ npm i nc-udp-scanner
 
 Enter the IP address of the device you want to port scan and the port range you want to scan as parameters to the function.
 
-**You must have root privileges in order to use this function.**
-
 ## Examples
 
 ```javascript
